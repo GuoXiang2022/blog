@@ -1,9 +1,11 @@
 ---
 title: c++
 date: 2023-04-12 20:51:06
-type: c++
-categories: 
-    - c++
+#type: c++
+#categories: 
+#    - c++
+tags:
+  - 计算机语言
 ---
 
 #	primer
