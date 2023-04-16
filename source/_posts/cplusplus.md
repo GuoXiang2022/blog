@@ -4,7 +4,7 @@ date: 2023-04-12 20:51:06
 #type: c++
 #categories: 
 #    - c++
-type:
+tags:
   - 计算机语言
 ---
 
@@ -331,7 +331,7 @@ int main()
 
 4. 类的前向声明`forward declaration`
 
-   ![image-20230221230425140](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230221230425140.png)
+   ![image-20230221230425140](/images/mdpic/image-20230221230425140.png)
 
 5. 友元再探
 
@@ -979,7 +979,7 @@ uninitialized_fill_n(b,n,t);
    auto last = uninitialized_copy(make_move_iterator(begin()),make_move_iterator(end()),first);
    ```
 
-   ![image-20230226151332316](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230226151332316.png)
+   ![image-20230226151332316](/images/mdpic/image-20230226151332316.png)
 
    
 
@@ -1170,7 +1170,7 @@ S& operator[](size_t pos){
 2. **箭头运算符永远不能丢掉成员访问这个最基本的含义**
 3. 重载的箭头运算符必须返回类的指针或者自定义了箭头运算符的某个类的对象
 
-![image-20230227203827110](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230227203827110.png)
+![image-20230227203827110](/images/mdpic/image-20230227203827110.png)
 
 
 
@@ -1243,7 +1243,7 @@ S& operator[](size_t pos){
 
 定义在头文件functional
 
-![image-20230227212233689](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230227212233689.png)
+![image-20230227212233689](/images/mdpic/image-20230227212233689.png)
 
 1. 在算法中使用标准库函数对象
 
@@ -1432,7 +1432,7 @@ manip(10);
 
 
 
-![image-20230228192704964](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230228192704964.png)
+![image-20230228192704964](/images/mdpic/image-20230228192704964.png)
 
 
 
@@ -1445,7 +1445,7 @@ manip(10);
 
 
 
-![image-20230228194931641](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230228194931641.png)
+![image-20230228194931641](/images/mdpic/image-20230228194931641.png)
 
 
 
@@ -1610,7 +1610,7 @@ aobj = bobj;
 
 
 
-![image-20230302193242380](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230302193242380.png)
+![image-20230302193242380](/images/mdpic/image-20230302193242380.png)
 
 
 
@@ -1896,7 +1896,7 @@ p579
 
 
 
-![image-20230302214440791](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230302214440791.png)
+![image-20230302214440791](/images/mdpic/image-20230302214440791.png)
 
 ​		大多数基类会定义一个虚析构函数，因此在默认情况下，基类通常不包含有合成版本的移动操作，且它的派生类也没有
 
@@ -1918,13 +1918,13 @@ p579
 
 - **派生类的赋值运算符**
 
-  ![image-20230302215454030](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230302215454030.png)
+  ![image-20230302215454030](/images/mdpic/image-20230302215454030.png)
 
-- **派生类的析构函数**![image-20230302215602691](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230302215602691.png)
+- **派生类的析构函数**![image-20230302215602691](/images/mdpic/image-20230302215602691.png)
 
 - **在构造函数或析构函数调用某个虚函数，我们应该执行与构造函数或析构函数所述类型相对应的虚函数版本**
 
-  ![image-20230302215807796](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230302215807796.png)
+  ![image-20230302215807796](/images/mdpic/image-20230302215807796.png)
 
 ​	
 
@@ -1940,7 +1940,7 @@ p579
 
 ​	继承的构造函数的特点
 
-![image-20230302220348687](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230302220348687.png)
+![image-20230302220348687](/images/mdpic/image-20230302220348687.png)
 
 
 
@@ -2113,7 +2113,7 @@ p579
 
   p = shared_ptr, u = unique_ptr, q = 内置指针
 
-  ![image-20230307101618479](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230307101618479.png)
+  ![image-20230307101618479](/images/mdpic/image-20230307101618479.png)
 
 - 不要混合使用普通指针和智能指针
 
@@ -2136,11 +2136,11 @@ p579
 
 - 不要使用get初始化另一个智能指针或为智能指针赋值
 
-- ![image-20230307104827832](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230307104827832.png)
+- ![image-20230307104827832](/images/mdpic/image-20230307104827832.png)
 
 - reset函数
 
-  ![image-20230307104854163](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230307104854163.png)
+  ![image-20230307104854163](/images/mdpic/image-20230307104854163.png)
 
 - 
 
@@ -2267,7 +2267,7 @@ p443
 
 - 函数模板和类模板成员函数的定义通常放在头文件中
 
-![image-20230313175040212](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230313175040212.png)
+![image-20230313175040212](/images/mdpic/image-20230313175040212.png)
 
 - 大多数的模板编译错误出现在实例化期间
 
@@ -2576,7 +2576,7 @@ fref(a,b);				//错误，模板参数是引用
 
 
 
-![image-20230314174121662](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230314174121662.png)
+![image-20230314174121662](/images/mdpic/image-20230314174121662.png)
 
 
 
@@ -2656,7 +2656,7 @@ template <typename It>
 
 
 
-![image-20230315125608694](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230315125608694.png)
+![image-20230315125608694](/images/mdpic/image-20230315125608694.png)
 
 ```c++
 template <typename It>
@@ -2686,7 +2686,7 @@ auto fun(It beg, It end) -> decltype(*beg){
 
 - 标准类型转换模板
 
-  ![image-20230315131650174](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230315131650174.png)
+  ![image-20230315131650174](/images/mdpic/image-20230315131650174.png)
 
 每个模板都有一个名为type的public成员，表示一个类型。此类型与模板自己的模板类型参数有关。如果不能转换模板参数，则type成员就是模板参数本身。
 
@@ -2723,7 +2723,7 @@ p633
 
 ​		**注意：如果一个函数参数的类型是const T&，当函数参数本身是const时，T的类型推断的结果不会是一个const类型，const已经是函数参数的一部分**
 
-​		![image-20230315150821915](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230315150821915.png)
+​		![image-20230315150821915](/images/mdpic/image-20230315150821915.png)
 
 
 
@@ -2785,7 +2785,7 @@ p633
 
 - 编写接受右值引用参数的模板函数的场景
 
-  ![image-20230315143056519](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230315143056519.png)
+  ![image-20230315143056519](/images/mdpic/image-20230315143056519.png)
 
   在实际中，右值引用通常用于两种情况：模板转发其实参，模板被重载
 
@@ -2861,7 +2861,7 @@ int&& lvr = std::move(rvr);
   }
   ```
 
-  ![image-20230315152719082](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230315152719082.png)
+  ![image-20230315152719082](/images/mdpic/image-20230315152719082.png)
 
 ​	现在你能明白std::move的工作原理了吗？ P637
 
@@ -2869,7 +2869,7 @@ int&& lvr = std::move(rvr);
 
 - 从一个左值static_cast到一个右值引用是允许的
 
-![image-20230315153606769](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230315153606769.png)
+![image-20230315153606769](/images/mdpic/image-20230315153606769.png)
 
 
 
@@ -2887,7 +2887,7 @@ int&& lvr = std::move(rvr);
 
 
 
-![image-20230315154342675](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230315154342675.png)
+![image-20230315154342675](/images/mdpic/image-20230315154342675.png)
 
 
 
@@ -3088,7 +3088,7 @@ int&& lvr = std::move(rvr);
 
   
 
-  ![image-20230319135450862](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230319135450862.png)
+  ![image-20230319135450862](/images/mdpic/image-20230319135450862.png)
 
 - 分布类型和随机数引擎
 
@@ -3189,7 +3189,7 @@ int&& lvr = std::move(rvr);
 
 
 
-![image-20230319151443195](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230319151443195.png)
+![image-20230319151443195](/images/mdpic/image-20230319151443195.png)
 
 
 
@@ -3201,7 +3201,7 @@ int&& lvr = std::move(rvr);
 
 - **异常安全的函数**
 
-  ![image-20230319152630394](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230319152630394.png)
+  ![image-20230319152630394](/images/mdpic/image-20230319152630394.png)
 
 
 
@@ -3386,7 +3386,7 @@ Blob<T>::Blob(std::initializer_list<T> il) try :
   - 我们确认函数不会抛出异常
   - 我们根本不知道该如何处理异常
 
-  ![image-20230323135715243](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230323135715243.png)
+  ![image-20230323135715243](/images/mdpic/image-20230323135715243.png)
 
 - 异常说明的实参
 
@@ -3417,7 +3417,7 @@ Blob<T>::Blob(std::initializer_list<T> il) try :
 
 ####	6.异常类层次
 
-![image-20230323141439364](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230323141439364.png)
+![image-20230323141439364](/images/mdpic/image-20230323141439364.png)
 
 
 
@@ -3593,7 +3593,7 @@ Blob<T>::Blob(std::initializer_list<T> il) try :
 
 - 头文件和using声明或指示
 
-  ![image-20230323210038472](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230323210038472.png)
+  ![image-20230323210038472](/images/mdpic/image-20230323210038472.png)
 
 - 
 
@@ -3729,7 +3729,7 @@ Blob<T>::Blob(std::initializer_list<T> il) try :
 
 - operator new接口和operator delete接口
 
-  ![image-20230326144508070](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230326144508070.png)
+  ![image-20230326144508070](/images/mdpic/image-20230326144508070.png)
 
   - 和析构函数类似，**operator delete不允许抛出异常**。当我们重载这些运算符时，**必须使用noexcept异常说明符**。
 
@@ -3934,7 +3934,7 @@ bool Base::equal(const Base &rhs) const{
 
 type_info类必须定义在typeinfo头文件中，并至少提供如下操作：
 
-![image-20230329140944294](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230329140944294.png)
+![image-20230329140944294](/images/mdpic/image-20230329140944294.png)
 
 type_info类没有默认构造函数，而且它的拷贝和移动构造函数以及赋值运算符都被定义为删除的。因此，我们无法定义或拷贝type_info类型的对象，也不能为type_info类型的对象赋值。**创建type_info对象的唯一途径是使用typeid运算符**
 

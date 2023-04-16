@@ -2500,7 +2500,7 @@ class Bond: public Investment { … };
 class RealEstate: public Investment { … };
 ```
 
-![image-20230402211150235](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230402211150235.png)
+![image-20230402211150235](/images/mdpic/image-20230402211150235.png)
 
 这种继承关系的工厂函数在堆上分配一个对象然后返回指针，调用方在不需要的时候有责任销毁对象。这使用场景完美匹配`std::unique_ptr`，因为调用者对工厂返回的资源负责（即对该资源的专有所有权），并且`std::unique_ptr`在自己被销毁时会自动销毁指向的内容。`Investment`继承关系的工厂函数可以这样声明：
 
@@ -2609,7 +2609,7 @@ auto makeInvestment(Ts&&... params)                 //C++14
 
 我之前说过，当使用默认删除器时（如`delete`），你可以合理假设`std::unique_ptr`对象和原始指针大小相同。当自定义删除器时，情况可能不再如此。函数指针形式的删除器，通常会使`std::unique_ptr`的从一个字（*word*）大小增加到两个。对于函数对象形式的删除器来说，变化的大小取决于函数对象中存储的状态多少，**无状态函数（stateless function）**对象（比如不捕获变量的*lambda*表达式）对大小没有影响，这意味当自定义删除器可以实现为函数或者*lambda*时，尽量使用*lambda*：
 
-![image-20230402211851846](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230402211851846.png)
+![image-20230402211851846](/images/mdpic/image-20230402211851846.png)
 
 ```c++
 auto delInvmt1 = [](Investment* pInvestment)        //无状态lambda的
@@ -2741,7 +2741,7 @@ std::vector<std::shared_ptr<Widget>> vpw{ pw1, pw2 };
 
 它不能。它必须使用更多的内存。然而，那部分内存不是`std::shared_ptr`对象的一部分。**那部分在堆上面**，或者`std::shared_ptr`创建者利用`std::shared_ptr`对自定义分配器的支持能力，那部分内存随便在哪都行。我前面提到了`std::shared_ptr`对象包含了所指对象的引用计数的指针。没错，但是有点误导人。因为引用计数是另一个更大的数据结构的一部分，那个数据结构通常叫做**控制块**（*control block*）。每个`std::shared_ptr`管理的对象都有个相应的控制块。控制块除了包含引用计数值外还有一个自定义删除器的拷贝，当然前提是存在自定义删除器。如果用户还指定了自定义分配器，控制块也会包含一个分配器的拷贝。控制块可能还包含一些额外的数据，正如[Item21](https://cntransgroup.github.io/EffectiveModernCppChinese/4.SmartPointers/item21.html)提到的，**一个次级引用计数*weak count***，但是目前我们先忽略它。我们可以想象`std::shared_ptr`对象在内存中是这样：
 
-![image-20230402222407521](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230402222407521.png)
+![image-20230402222407521](/images/mdpic/image-20230402222407521.png)
 
 当指向对象的`std::shared_ptr`一创建，对象的控制块就建立了。至少我们期望是如此。通常，对于一个创建指向对象的`std::shared_ptr`的函数来说不可能知道是否有其他`std::shared_ptr`早已指向那个对象，所以控制块的创建会遵循下面几条规则：
 
@@ -2932,7 +2932,7 @@ std::shared_ptr<Widget> spw3(wpw);        //如果wpw过期，抛出std::bad_wea
 
 2. 环形引用
 
-   ![image-20230403174818172](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230403174818172.png)
+   ![image-20230403174818172](/images/mdpic/image-20230403174818172.png)
 
 
 
@@ -4873,7 +4873,7 @@ std::vector<Widget> vm1;
 auto vm2 = std::move(vm1);
 ```
 
-![image-20230405171115798](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230405171115798.png)
+![image-20230405171115798](/images/mdpic/image-20230405171115798.png)
 
 `std::array`没有这种指针实现，数据就保存在`std::array`对象中：
 
@@ -4887,7 +4887,7 @@ std::array<Widget, 10000> aw1;
 auto aw2 = std::move(aw1);
 ```
 
-![image-20230405171139477](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230405171139477.png)
+![image-20230405171139477](/images/mdpic/image-20230405171139477.png)
 
 
 

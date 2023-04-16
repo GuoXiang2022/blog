@@ -290,7 +290,7 @@ vector<int> bigdiv(vector<int>& a,int b,int& r){
 
    容斥原理
 
-   ![image-20230313232741116](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230313232741116.png)
+   ![image-20230313232741116](/images/mdpic/image-20230313232741116.png)
 
    ```c++
    //预处理
@@ -404,9 +404,9 @@ int main(){
 
 后序非递归遍历比较难：
 
-![image-20230219214907550](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230219214907550.png)
+![image-20230219214907550](/images/mdpic/image-20230219214907550.png)
 
-![image-20230219215327444](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230219215327444.png)
+![image-20230219215327444](/images/mdpic/image-20230219215327444.png)
 
 ##	12.图
 
@@ -503,7 +503,7 @@ bool topo_sort(){
 
 欧拉回路 = 欧拉图
 
-<img src="C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230214152201939.png" alt="image-20230214152201939" style="zoom:67%;" />
+<img src="/images/mdpic/image-20230214152201939.png" alt="image-20230214152201939" style="zoom:67%;" />
 
 ##	13.离散化
 

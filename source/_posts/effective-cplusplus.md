@@ -691,7 +691,7 @@ Connect(sp);		//错误！
 - 如果new使用了[]，delete却没有使用[]，析构函数缺少调用，行为未定义
 - 如果new没有使用[]，delete却使用[]，delete会读取若干内存并将它解释为"数据大小"，然后多次调用析构函数。浑然不知道它处理的那块内存并不是个数组，其结果行为未定义
 
-![image-20230307212844536](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230307212844536.png)
+![image-20230307212844536](/images/mdpic/image-20230307212844536.png)
 
 - 尽量不要对数组做typedef动作，如：
 
@@ -969,13 +969,13 @@ processWidget(pw,priority());			//绝对不至于造成泄漏
 
 - 比较自然的做法是将non-member,non-friend函数和类在同一个namespace内
 
-  ![image-20230308163603813](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230308163603813.png)
+  ![image-20230308163603813](/images/mdpic/image-20230308163603813.png)
 
 - 1
 
 
 
-![image-20230308163618619](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230308163618619.png)
+![image-20230308163618619](/images/mdpic/image-20230308163618619.png)
 
 
 
@@ -1101,7 +1101,7 @@ swap原本只是STL的一部分，后来成为异常安全编程（条款29）�
 
 ###	5.实现
 
-![image-20230309205807664](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230309205807664.png)
+![image-20230309205807664](/images/mdpic/image-20230309205807664.png)
 
 
 
@@ -1111,11 +1111,11 @@ swap原本只是STL的一部分，后来成为异常安全编程（条款29）�
 - 因为有可能会有异常抛出，所以就会有对象在函数中并未被使用，就会付出构造和析构成本
 - 你应该尽可能的延后变量定义，直到这份定义能够给它初值实参为止。因为这样，不仅能够避免构造和析构非必要对象，还可以避免无异议的default构造行为。
 
-![image-20230309190803119](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230309190803119.png)
+![image-20230309190803119](/images/mdpic/image-20230309190803119.png)
 
 
 
-![image-20230309190815153](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230309190815153.png)
+![image-20230309190815153](/images/mdpic/image-20230309190815153.png)
 
 
 
@@ -1510,11 +1510,11 @@ swap原本只是STL的一部分，后来成为异常安全编程（条款29）�
 
 - 利用复合composition + 继承 代替private继承
 
-  ![image-20230311133312443](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230311133312443.png)
+  ![image-20230311133312443](/images/mdpic/image-20230311133312443.png)
 
   此手法还阻止了覆写base class 的virtual函数 （即C++11 的final）
 
-  ![image-20230311143241944](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230311143241944.png)
+  ![image-20230311143241944](/images/mdpic/image-20230311143241944.png)
 
 - private继承可以出现EBO（空基类优化）
 
@@ -1753,7 +1753,7 @@ p247
 
 - 成员函数模板不局限于构造函数
 
-  ![image-20230314222138597](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230314222138597.png)
+  ![image-20230314222138597](/images/mdpic/image-20230314222138597.png)
 
 - **成员模板不改变语言规则**
 
@@ -2014,7 +2014,7 @@ private:
 
 - 用户自定义类型的迭代器类型“必须嵌套一个typedef”，名为iterator_category，用来确认适当的卷标结构
 
-![image-20230318153408317](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230318153408317.png)
+![image-20230318153408317](/images/mdpic/image-20230318153408317.png)
 
 
 
@@ -2163,7 +2163,7 @@ private:
 
 
 
-![image-20230311141228069](C:\Users\guoxiang\AppData\Roaming\Typora\typora-user-images\image-20230311141228069.png)
+![image-20230311141228069](/images/mdpic/image-20230311141228069.png)
 
 
 
