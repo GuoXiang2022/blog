@@ -261,8 +261,8 @@ vector<int> bigdiv(vector<int>& a,int b,int& r){
     r = 0;
     for(int i = a.size() - 1; i >= 0; --i){
         r = r * 10 + a[i];
-        res.push_back(r / 10);
-        r %= 10;
+        res.push_back(r / b);
+        r %= b;
     }
     reverse(res.begin(),res.end());
     while(res.size() > 1 && res.back() == 0)	res.pop_back();
