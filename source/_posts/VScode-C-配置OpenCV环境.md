@@ -2,8 +2,8 @@
 title: VScode C++ 配置OpenCV环境
 date: 2023-05-17 00:04:58
 tags:
-    -OpenCV
-    -环境配置
+    - OpenCV
+    - 环境配置
 ---
 
 ####	在VScode上配置C++ OpenCV环境
