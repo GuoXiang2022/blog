@@ -1,5 +1,5 @@
 ---
-title: 群晖NAS权限开通工具
+title: 禁连WIFI脚本
 date: 2024-05-2 00:00:00
 tags:
     - Windows
