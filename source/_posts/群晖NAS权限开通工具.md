@@ -22,7 +22,7 @@ tags:
 
 ####	Shell 脚本：
 
-```shell
+```bash
 #! /bin/bash
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/syno/bin
